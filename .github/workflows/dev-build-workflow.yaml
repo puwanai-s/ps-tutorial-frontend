@@ -123,5 +123,5 @@ jobs:
       with:
         token: ${{ secrets.REPO_ACCESS_TOKEN }}
         repository: puwanai-s/ps-tutorial-pipeline
-        event-type: ps-tutorial-backend-cd-dev
+        event-type: ps-tutorial-frontend-cd-dev
         client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
