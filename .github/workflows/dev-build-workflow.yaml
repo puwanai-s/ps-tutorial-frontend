@@ -17,5 +17,5 @@ jobs:
       runs-on: ubuntu-latest
       environment: dev
       steps:
-      - name: Setup node
-        uses: actions/setup-node@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
