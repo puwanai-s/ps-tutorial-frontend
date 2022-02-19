@@ -17,5 +17,6 @@ jobs:
       runs-on: ubuntu-latest
       environment: dev
       steps:
+      steps:
       - name: Checkout code
         uses: actions/checkout@v2
