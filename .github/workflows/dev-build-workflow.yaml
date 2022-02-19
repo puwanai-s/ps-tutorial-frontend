@@ -1,4 +1,5 @@
 name: DEV - Build
+
 on:
   workflow_dispatch:
   push:
@@ -7,16 +8,17 @@ on:
   pull_request:
     branches:
       - develop
+
 env:
   APP_NAME: ps-tutorial-frontend
   CONTAINER_REPOSITORY: "acrpstutorial001.azurecr.io"
   IMAGE_TAG: "0.0.1-SNAPSHOT"
+
 jobs:
-  unittest:
+  unitest:
     name: UnitTest
       runs-on: ubuntu-latest
       environment: dev
-      steps:
       steps:
       - name: Checkout code
         uses: actions/checkout@v2
