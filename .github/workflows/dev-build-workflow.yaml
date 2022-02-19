@@ -94,7 +94,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: dev
-      url: https://github.com/puwanai-s/ps-tutorial-pipeline/actions/workflows/dev-tutorial-backend-deploy.yml
+      url: https://github.com/puwanai-s/ps-tutorial-pipeline/actions/workflows/dev-tutorial-frontend-deploy.yml
     needs: [unitest,analyze] # if on env sit don't use
     
     steps:
