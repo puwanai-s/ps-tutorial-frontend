@@ -1,7 +1,6 @@
 name: DEV - Build
 on:
   workflow_dispatch:
-  
   push:
     branches:
       - develop
@@ -13,9 +12,10 @@ env:
   CONTAINER_REPOSITORY: "acrpstutorial001.azurecr.io"
   IMAGE_TAG: "0.0.1-SNAPSHOT"
 jobs:
-  name: UnitTest
-    runs-on: ubuntu-latest
-    environment: dev
-    steps:
-    - name: Setup node
-      uses: actions/setup-node@v2
+  unittest:
+    name: UnitTest
+      runs-on: ubuntu-latest
+      environment: dev
+      steps:
+      - name: Setup node
+        uses: actions/setup-node@v2
